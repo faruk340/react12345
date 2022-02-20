@@ -1,0 +1,97 @@
+.product_section{
+    position: relative;
+    margin-top: 20em;
+    border: 1px solid #7fffd4;
+    width: 100%;
+    background-color: #7fffd4;
+    height: 400px;
+}
+.product_section .product_section_header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.product_section .product_section_header h2{
+    font-size: 1.5rem;
+    color: rgb(230, 30, 30);
+}
+.product_section .product_section_header h3{
+    font-size: 1.5rem;
+}
+.product_section_box{
+    position: relative;
+    margin-top: 26em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    height: 200px;
+    border-radius: 15px 15px 15px;
+    box-shadow: 0px 5px 30px 2px rgb(202, 196, 196);
+}
+.product_section_box .box4{
+    border-right: none !important;
+}
+.product_section_box .box{
+    position: relative;
+    height: 100px;
+    border-right: 1px solid rgb(211, 203, 203);
+    padding-right: 6.5em;
+}
+.product_section_box .box:hover i{
+    top: -30px;
+    padding-bottom: 1em;
+    opacity: 1;
+}
+.product_section_box .box i{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    font-size: 1.8rem;
+    color: rgb(230, 50, 89);
+    padding-bottom: 0.3em;
+    transition: all 0.3s ease-in;
+    height: 50%;
+    opacity: 0.8;
+}
+.product_section_box .box h3{
+    margin-top: 2em;
+    font-size: 1.3rem;
+    height: 50%;
+}
+
+
+@media(max-width:991px){
+    .product_section{
+        margin-top: 5em;
+    }
+    .product_section_box{
+        flex-direction: column;
+        height: 500px;
+    }
+    .product_section_box .box{
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid rgb(211, 203, 203);
+        height: 300px;
+    }
+    .product_section_box .box4{
+        border-bottom: none !important;
+    }
+    .product_section_box .box i{
+        top: 15%;
+        left: 40%;
+        padding-top: 0.5em;
+    }
+    .product_section_box .box h3{
+        margin-top: 3.8em;
+    }
+    .product_section_box .box:hover i{
+        top: 5%;
+        padding-bottom: 1em;
+        opacity: 1;
+    }
+}
